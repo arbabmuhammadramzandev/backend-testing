@@ -1,0 +1,15 @@
+{
+    "_envs": ["local", "dev", "prod"],
+    "apiHost": {
+        "local": "https://localhost:8081",
+        "dev":  "https://localhost:8082",
+        "prod":  "https://localhost:8083"
+    },
+    "mongoUri": {
+        "dev":"mongodb+srv://safazahid_ecommerce:safazahid_ecommerce@cluster0.sob95.mongodb.net/safa_zahid_ecommerce?retryWrites=true&w=majority",
+    },
+    "logLevel": {
+        "default": "info",
+        "local": "debug"
+    }
+}
