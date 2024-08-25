@@ -16,6 +16,7 @@ require("dotenv/config");
 
 const api = process.env.API_URL;
 const userRoute = require("./src/routes/userRoute");
+const productRoute = require("./src/routes/productRoute");
 const categoryRoute = require("./src/routes/categoryRoute");
 const verifyRoute = require("./src/routes/verifyRoute");
 
@@ -41,6 +42,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(`${api}/verify`, verifyRoute);
 app.use(`${api}/user`, userRoute);
 app.use(`${api}/category`, categoryRoute);
+app.use(`${api}/product`, productRoute);
 
 //Moongoose connection
 mongodbConnect.dbConnect();
